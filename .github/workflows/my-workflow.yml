@@ -18,3 +18,8 @@ jobs:
               repo: context.repo.repo,
               body: ":video_game: You've created this issue using Github Script!! :snowflake:"
             })
+            github.projects.createCard({
+            column_id: 18949536,
+            content_id: context.payload.issue.id,
+            content_type: "Issue"
+            });
