@@ -14,7 +14,7 @@ jobs:
           script: |
             github.issues.createComment({
               issue_number: context.issue.number,
-              owner: contextx.repo.owner,
+              owner: context.repo.owner,
               repo: context.repo.repo,
               body: ":video_game: You've created this issue usingg Github Script!! :snowflake:"
             })
